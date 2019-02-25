@@ -68,6 +68,13 @@
         "description": "The domain user password, also used as the password of the local administrator user."
       }
     },
+    "domainOuPath": {
+      "type": "string",
+      "defaultValue": "OU=Computers,OU=RFIT_QRM_ETIT,DC=azcooda,DC=net",
+      "metadata": {
+        "description": "The OU Path to which the computer should be joined to, in the format 'OU=computers,OU=yourlocation,DC=your,DC=domain,DC=here'"
+      }
+    },
     "virtualNetworkName": {
       "type": "string",
       "metadata": {

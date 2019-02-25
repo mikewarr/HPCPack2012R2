@@ -206,6 +206,7 @@
             "settings": {
               "Name": "[parameters('domainName')]",
               "User": "[concat(parameters('domainName'), '\\', parameters('adminUsername'))]",
+              "OUPath": "[parameters('domainOuPath')]",
               "NumberOfRetries": "50",
               "RetryIntervalInMilliseconds": "10000",
               "Restart": "true",
