@@ -234,6 +234,9 @@
           "adminPassword": {
             "value": "[parameters('domainUserPassword')]"
           },
+          "adminOuPath": {
+            "value": "[parameters('domainOuPath')]"
+          },
           "availabilitySetName": {
             "value": "[parameters('availabilitySetName')]"
           },

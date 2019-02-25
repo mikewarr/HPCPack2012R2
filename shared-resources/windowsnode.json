@@ -57,6 +57,12 @@
         "description": "The password of the administrator"
       }
     },
+    "adminOuPath": {
+      "type": "string",
+      "metadata": {
+        "description": "The OUPath for the computer object"
+      }
+    },
     "availabilitySetName": {
       "type": "string",
       "defaultValue": "",
@@ -206,7 +212,7 @@
             "settings": {
               "Name": "[parameters('domainName')]",
               "User": "[concat(parameters('domainName'), '\\', parameters('adminUsername'))]",
-              "OUPath": "[parameters('domainOuPath')]",
+              "OUPath": "[parameters('adminOuPath')]",
               "NumberOfRetries": "50",
               "RetryIntervalInMilliseconds": "10000",
               "Restart": "true",
